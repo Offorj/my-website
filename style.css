@@ -1,0 +1,201 @@
+
+body{
+    background-color: #add8e6;
+    color: #000080;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: o;
+}
+header{
+    background-color: #f8f9fa;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+nav a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0; 
+    text-decoration: none;
+    color: #000080;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #dcdcdc; 
+    color: #000080;
+}
+main {
+    max-width: 800px;
+    margin: auto; 
+    padding: 20px;
+}
+
+
+#slackDisplayName, #slackEmail {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+#slackDisplayName {
+    font-weight: bold; 
+    font-size: 50px;
+}
+
+#slackEmail {
+    font-family: Arial, sans-serif;
+}
+#slackDisplayName:hover, #slackEmail:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+#slackDisplayName, #slackEmail {
+    animation: slideInFromLeft 2s ease-in-out forwards;
+}
+
+
+
+#techGoals {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#techGoals h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#techGoals p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: left;
+  
+
+}
+#techGoals p:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    /* background-color: #f0f0f0;  */
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+#techGoals {
+    animation: fadeIn 2s ease-in-out forwards;
+}
+#currentTimeUTC{
+    text-align: center;
+}
+#currentDay{
+    text-align: center;
+}
+
+#slackProfilePicture {
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+}
+
+#slackProfilePicture:hover {
+    transform: scale(1.1); 
+}
+@keyframes slideInFromBottom {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+#slackProfilePicture {
+    animation: slideInFromBottom 2s ease-in-out forwards;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2, p {
+    margin: 0;
+    text-align: center;
+}
+@keyframes scaleUp {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+section {
+    animation: scaleUp 1s ease-out forwards;
+}
+section:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+ @media only screen and (max-width:767px) {
+    body{
+        background-color: black;
+    
+    }
+    nav{
+        flex-direction: column;
+    }
+
+    img{
+        width: 100%;
+    }
+    #techGoals p{
+        border: 1px solid #a6a3a3;
+        padding: 5px 5px 5px 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    #techGoals h3{
+        color: white; 
+    }
+    
+    #techGoals {
+        background-color: black;
+    }
+    #techGoals p {
+       text-align: left;
+        color: #ffffff;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    img{
+        width: 100%;
+    }
+
+   
+}
+
+
+
